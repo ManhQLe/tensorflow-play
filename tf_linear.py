@@ -13,6 +13,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 #
 #
 
+
+
 golden_rate = (sqrt(5)-1)/2.0
 n_of_feature = 4
 n_of_out = 1
@@ -31,3 +33,4 @@ out = tf.nn.sigmoid(logits)
 cost = tf.reduce_mean(out)
 
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=golden_rate).minimize(cost)
+
